@@ -9,8 +9,8 @@ class App extends Component {
     this.addComment = this.addComment.bind(this)
     this.displayComment = this.displayComment.bind(this)
     this.state = {
-      comment = [],
-      display = {
+      comment: [],
+      display: {
         author: "",
         email: "",
         detail: "",
@@ -27,7 +27,13 @@ class App extends Component {
       interested: interested
     }
     this.setState({
-      comment: [..this.state.comment, new_comment]
+      comment: [...this.state.comment, new_comment]
+    })
+  }
+
+  displayComment(comment) {
+    this.setState({
+      display: comment
     })
   }
 
