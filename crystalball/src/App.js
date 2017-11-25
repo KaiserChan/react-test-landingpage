@@ -7,6 +7,28 @@ class App extends Component {
   constructor () {
     super();
     this.addComment = this.addComment.bind(this)
+    this.displayComment = this.displayComment.bind(this)
+    this.state = {
+      comment = [],
+      display = {
+        author: "",
+        email: "",
+        detail: "",
+        interested: ""
+      }
+    }
+  }
+
+  addComment(author, email, detail, interested) {
+    let new_comment = {
+      author: author,
+      email: email,
+      detail: detail,
+      interested: interested
+    }
+    this.setState({
+      comment: [..this.state.comment, new_comment]
+    })
   }
 
   render() {
