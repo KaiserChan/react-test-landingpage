@@ -1,0 +1,25 @@
+{
+  "name": "react-test-landingpage",
+  "version": "1.0.0",
+  "description": "Landing page built using react, as a test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaiserChan/react-test-landingpage.git"
+  },
+  "author": "Kaiser Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaiserChan/react-test-landingpage/issues"
+  },
+  "homepage": "https://github.com/KaiserChan/react-test-landingpage#readme",
+  "dependencies": {
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
